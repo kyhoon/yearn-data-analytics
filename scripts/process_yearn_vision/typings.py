@@ -1,5 +1,5 @@
 from enum import Enum
-from typing import Annotated, Literal, NewType, TypedDict
+from typing import Literal, NewType, TypedDict
 
 from typing_extensions import NotRequired
 
@@ -12,7 +12,7 @@ class NetworkStr(str, Enum):
 
 
 class Data(TypedDict):
-    values: Annotated[list[list[int]], 2]
+    values: list[list[int]]
 
 
 class Label(TypedDict):
