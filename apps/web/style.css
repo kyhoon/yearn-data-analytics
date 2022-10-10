@@ -1,0 +1,25 @@
+/* This will load Tailwindcss + all the overwrite from Yearn lib */
+@import '@yearn-finance/web-lib/dist/style.next.css';
+@import 'nextra-theme-docs/style.css';
+
+#app {
+	max-width: 1635px;
+}
+
+.nextra-nav-container + div {
+	max-width: 128rem;
+}
+
+.nextra-nav-container + div > article > main {
+	max-width: 96rem;
+}
+
+.nextra-nav-container nav {
+	padding: 0 2rem;
+	max-width: 100%;
+}
+
+/* remove last updated for the index page */
+div.pointer-default {
+	opacity: 0;
+}
